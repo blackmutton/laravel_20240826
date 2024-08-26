@@ -4,30 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CarController extends Controller
+class HotelController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // echo "123";
-        $data = [
-            [
-                'id' => 1,
-                'name' => 'amy'
-            ],
-            [
-                'id' => 2,
-                'name' => 'bob'
-            ],
-            [
-                'id' => 3,
-                'name' => 'cat'
-            ],
-        ];
-        // dd($data);
-        return view('car.index', ['data' => $data]);
+        //
     }
 
     /**
@@ -35,7 +19,7 @@ class CarController extends Controller
      */
     public function create()
     {
-        dd('hello car create');
+        //
     }
 
     /**
@@ -51,7 +35,7 @@ class CarController extends Controller
      */
     public function show(string $id)
     {
-        dd('hi car show');
+        //
     }
 
     /**
@@ -59,7 +43,7 @@ class CarController extends Controller
      */
     public function edit(string $id)
     {
-        dd('hi car edit');
+        //
     }
 
     /**
@@ -77,10 +61,19 @@ class CarController extends Controller
     {
         //
     }
-
-    public function child()
+    public function f1()
     {
-        // dd('child ok');
-        return view('child');
+        // dd("f1");
+        return view("hotel.f1");
+    }
+    public function f2()
+    {
+        // dd("f1");
+        return view("hotel.f2");
+    }
+    public function f3()
+    {
+        // dd("f1");
+        return view("hotel.f3");
     }
 }
